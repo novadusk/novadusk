@@ -1,56 +1,62 @@
-# novadusk
+<p align="center">
+  <img src="./assets/profile-header.svg" width="100%" alt="novadusk — Embedded software and Linux systems. From firmware to kernel observability." />
+</p>
 
-> *Building deterministic, reliable, and close-to-the-metal software.*  
-> **Embedded Software & Linux Systems Engineer** — Focusing on **FreeRTOS / Embedded Systems**, **Linux Kernel Observability (eBPF)**, and **Industrial Edge Platforms**.
+<p align="center">
+  <b>Embedded Software &amp; Linux Systems</b><br />
+  FreeRTOS · Linux kernel observability · Industrial edge platforms
+</p>
 
----
+## Selected projects
 
-### 🛠️ Hardware & Systems Engineering Matrix
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>01 &nbsp; MemScope Guard</h3>
+      <p>Linux memory pressure and fragmentation diagnostics, with an emphasis on runtime evidence.</p>
+      <p><code>Linux</code> <code>eBPF</code> <code>Python</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>02 &nbsp; FreeRTOS Controller</h3>
+      <p>STM32F103 controller combining sensor acquisition, PID motor control, UART/DMA and IAP.</p>
+      <p><code>STM32</code> <code>FreeRTOS</code> <code>C</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>03 &nbsp; Memory Fragmentation</h3>
+      <p>eBPF tools for observing Linux physical memory fragmentation and buddy allocator behavior.</p>
+      <p><code>Linux memory</code> <code>BCC</code> <code>Python</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>04 &nbsp; Edge Inspection Platform</h3>
+      <p>Multi-modal inspection robotics bringing together edge perception, station dispatch and verification workflows.</p>
+      <p><code>Edge perception</code> <code>Robotics</code> <code>C++</code></p>
+    </td>
+  </tr>
+</table>
 
-| Domain | Architectures, Stacks & Protocols |
+<sub>Project source repositories are currently private.</sub>
+
+## Engineering toolkit
+
+| Focus | Technologies |
 | :--- | :--- |
-| **Silicon & Architectures** | ARM Cortex-M (STM32F1/F4), Rockchip SoCs, x86_64 |
-| **RTOS & Systems** | **FreeRTOS** (Task Scheduling, IPC, Queues, Timers), **Linux Kernel** (Memory Subsystem, Tracepoints) |
-| **Peripherals & Protocols** | UART / DMA, SPI, I2C, CAN Bus, GPIO, IAP Bootloader (In-Application Programming) |
-| **Languages** | C (C99 / C11), Modern C++ (C++14 / C++17), Python, Shell (Bash), ARM Assembly |
-| **Toolchains & Tooling** | GCC / Clang, CMake, Make, GDB, OpenOCD, eBPF (BCC / bpftrace), Git |
+| **Firmware & control** | STM32 · ARM Cortex-M · FreeRTOS · PID · UART/DMA · IAP |
+| **Linux & observability** | Linux kernel · Memory subsystem · eBPF · BCC / bpftrace |
+| **Languages** | C · C++ · Python · Shell · ARM assembly |
+| **Build & debug** | GCC / Clang · CMake · Make · GDB · OpenOCD · Git |
 
----
+## Open source
 
-### 📌 Selected Engineering Projects
+A selection of pull requests to upstream projects:
 
-#### 🔭 Linux Observability & Kernel Diagnostics
-* **[MemScope-Guard](https://github.com/novadusk/MemScope-Guard)**  
-  *Linux memory pressure and fragmentation evidence diagnostics with eBPF and Python.*  
-  * Implemented non-invasive runtime observability for memory subsystem bottlenecks using eBPF tracepoints and kernel probes.
-  * Captures memory compaction latency and allocation stalls with minimal overhead.
+| Project | Contribution |
+| :--- | :--- |
+| **Rockchip MPP** | [Release camera resources on initialization failure](https://github.com/rockchip-linux/mpp/pull/975) |
+| **Armbian** | [Accept `.dtso` sources in the overlay utility](https://github.com/armbian/build/pull/10963) |
+| **RKNN Model Zoo** | [Free preprocessing buffers on inference errors](https://github.com/airockchip/rknn_model_zoo/pull/455) |
 
-* **[linux-physical-memory-fragmentation-detector](https://github.com/novadusk/linux-physical-memory-fragmentation-detector)**  
-  *Linux eBPF tools for observing physical memory fragmentation and external fragmentation.*  
-  * Tracks buddy allocator behavior to detect external memory fragmentation issues causing latency spikes.
-
-#### ⚡ Embedded & Real-Time Control
-* **[stm32-freertos-range-hood-controller](https://github.com/novadusk/stm32-freertos-range-hood-controller)**  
-  *STM32F103 & FreeRTOS real-time controller with motor PID, sensors, UART/DMA and IAP.*  
-  * Multi-task architecture orchestrated by FreeRTOS with deterministic PID closed-loop motor control.  
-  * Zero-copy packet reception using UART with circular DMA and custom IAP bootloader for fail-safe firmware updates.
-
-#### 🤖 Industrial Robotics & Edge Platforms
-* **[mine-inspection-platform-mimo](https://github.com/novadusk/mine-inspection-platform-mimo)**  
-  *Mine multi-modal inspection robotic platform with edge perception and station dispatch.*  
-  * Integrated multi-sensor perception with station dispatching pipelines and automated verification workflows.
-
----
-
-### 📊 GitHub Activity & Language Distribution
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=novadusk&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="150" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=novadusk&layout=compact&theme=tokyonight&hide_border=true" height="150" alt="Top Languages" />
-</div>
-
----
-
-### 📫 Connect
-* **GitHub**: [@novadusk](https://github.com/novadusk)
-* **Specialization**: Embedded Firmware, RTOS, Linux Kernel Internals, eBPF Observability
+<p align="center">
+  <a href="https://github.com/pulls?q=is%3Apr+author%3Anovadusk+is%3Apublic+-user%3Anovadusk">More upstream contributions ↗</a>
+</p>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">novadusk — Embedded software and Linux systems</title>
+  <desc id="desc">From firmware to kernel observability. A midnight blue circuit illustration connects firmware, kernel, and edge systems.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142C35"/>
+      <stop offset="1" stop-color="#0E1926"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#9CCBC2" stroke-opacity=".045"/>
+    </pattern>
+    <linearGradient id="trace" x1="740" y1="70" x2="1100" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9DD9C3" stop-opacity=".15"/>
+      <stop offset=".5" stop-color="#9DD9C3" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#9DD9C3" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="18" fill="url(#background)"/>
+  <rect width="1200" height="260" rx="18" fill="url(#grid)"/>
+  <rect x="44" y="44" width="4" height="18" rx="2" fill="#A3DAC5"/>
+  <text x="61" y="58" fill="#A3DAC5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2.4">EMBEDDED SOFTWARE / LINUX SYSTEMS</text>
+  <text x="44" y="144" fill="#EFF7F4" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="70" font-weight="700" letter-spacing="-2.5">novadusk<tspan fill="#E7BA88">.</tspan></text>
+  <text x="47" y="188" fill="#B0C4CA" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="21">From firmware to kernel observability.</text>
+  <path d="M744 80H785V130H832M744 182H785V130M928 130H967V80H1011M967 130V182H1011" stroke="url(#trace)" stroke-width="2"/>
+  <rect x="646" y="60" width="98" height="40" rx="9" fill="#192F38" stroke="#34534F"/>
+  <text x="695" y="85" text-anchor="middle" fill="#B9D9CE" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">FIRMWARE</text>
+  <rect x="646" y="162" width="98" height="40" rx="9" fill="#192F38" stroke="#34534F"/>
+  <text x="695" y="187" text-anchor="middle" fill="#B9D9CE" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">RTOS</text>
+  <rect x="832" y="85" width="96" height="90" rx="14" fill="#1A343B" stroke="#7FB6A4" stroke-opacity=".8"/>
+  <rect x="844" y="97" width="72" height="66" rx="8" stroke="#A3DAC5" stroke-opacity=".18"/>
+  <text x="880" y="135" text-anchor="middle" fill="#E0EEE7" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="600">KERNEL</text>
+  <path d="M851 77V85M870 77V85M889 77V85M908 77V85M851 175V183M870 175V183M889 175V183M908 175V183" stroke="#7FB6A4" stroke-width="2"/>
+  <rect x="1011" y="60" width="124" height="40" rx="9" fill="#192F38" stroke="#34534F"/>
+  <text x="1073" y="85" text-anchor="middle" fill="#B9D9CE" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">OBSERVABILITY</text>
+  <rect x="1011" y="162" width="124" height="40" rx="9" fill="#192F38" stroke="#34534F"/>
+  <text x="1073" y="187" text-anchor="middle" fill="#B9D9CE" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">EDGE</text>
+  <circle cx="785" cy="130" r="4" fill="#A3DAC5"/>
+  <circle cx="967" cy="130" r="4" fill="#E7BA88"/>
+</svg>
